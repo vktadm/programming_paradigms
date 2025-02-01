@@ -1,5 +1,6 @@
 from math import log
 
+
 def while_operator_1():
     slags = ['osnovnye--metody-----slovarey',
              'peremennyye-operator----prisvaivaniya--tipy---dannykh',
@@ -10,6 +11,7 @@ def while_operator_1():
         while '--' in slag:
             slag = slag.replace('--', '-')
         print(slag)
+
 
 def while_operator_2():
     n = 0
@@ -25,6 +27,7 @@ def while_operator_2():
 
     print(' '.join(map(str, rez)))
 
+
 def sum_lists():
     a = [[1, 2, 3, 4], [2, 3, 4, 5], [3, 4, 5, 6]]
     b = [[1, 1, 1, 1], [2, 2, 2, 2], [3, 3, 3, 3]]
@@ -38,6 +41,7 @@ def sum_lists():
         rez.append(r)
 
     print(rez)
+
 
 def row_to_column():
     A = [[1, 2, 3, 4],
@@ -72,8 +76,9 @@ def row_to_column():
             print(x, end='\t')
         print()
 
+
 def pascal_triangle():
-    n = 6 # Кол-во строк в треугольнике
+    n = 6  # Кол-во строк в треугольнике
 
     p = [[1] * (i + 1) for i in range(n)]
 
@@ -88,6 +93,7 @@ def pascal_triangle():
             print(str(p[i][j]), end=' ')
         print()
 
+
 def two_to_one_list():
     lst_in = [[1, 2, 3, 4],
               [5, 6, 7, 8],
@@ -98,6 +104,7 @@ def two_to_one_list():
 
     print(' '.join(map(str, res_list)))
 
+
 def lst_to_matrix():
     lst = '1 2 3 4 5 6'.split()
 
@@ -105,6 +112,7 @@ def lst_to_matrix():
     res_matrix = [[lst[j] for j in range(i * l, i * l + l)] for i in range(l)]
 
     print(res_matrix)
+
 
 def poem():
     t = ["– Скажи-ка, дядя, ведь не даром",
@@ -116,7 +124,7 @@ def poem():
          "Как мы рубили их тогда!"
          ]
 
-    rez_t = [[word for word in row.split() if len(word) > 3 ] for row in t]
+    rez_t = [[word for word in row.split() if len(word) > 3] for row in t]
     print(rez_t)
 
 
